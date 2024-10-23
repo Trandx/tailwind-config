@@ -14,7 +14,7 @@ try {
     ...distPackageData,
     version: packageData.version,
     name: packageData.name,
-    key: packageData.key,
+    keywords:  packageData.keywords,
     description: packageData.description,
     // Uncomment the lines below if you want to include more fields
     // name: packageData.name,
