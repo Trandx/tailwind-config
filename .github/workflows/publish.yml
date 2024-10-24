@@ -59,6 +59,10 @@ jobs:
       #       fi
       #     done
 
+      - name: start build
+        #start build other packages
+        run: pnpm recursive run build
+
       - name: Publish updated packages
         # if: env.CHANGED_PACKAGES != ''
         run: npx changeset publish
