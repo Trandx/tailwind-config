@@ -1,5 +1,11 @@
 # @trandx/tailwind-auto-grid
 
+## 1.0.2
+
+### Patch Changes
+
+- update doc
+
 ## 1.0.1
 
 ### Patch Changes
