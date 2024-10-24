@@ -1,13 +1,6 @@
 {
     "private": false,
     "type": "module",
-    "keywords": [
-        "tailwind",
-        "grid",
-        "auto",
-        "fit",
-        "responsive"
-    ],
     "main": "lib/index.js",
     "module": "lib/index.js",
     "types": "types/index.d.ts",
@@ -26,7 +19,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/Trandx/tailwind-config/tree/main/src/plugin/auto-grid"
+        "url": "https://github.com/Trandx/tailwind-config"
     },
     "license": "MIT"
 }

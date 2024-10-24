@@ -2,11 +2,17 @@
   "name": "@package/tailwind-config",
   "version": "0.0.0",
   "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "dist/lib/index.js",
+  "module": "dist/lib/index.js",
   "types": "dist/types/index.d.ts",
+  "keywords": [
+    "tailwind",
+    "config"
+  ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc && npm run cp && npm run mv-pkg-json",
+    "cp": "find ./ -maxdepth 1 -type f \\( -name 'pub.*.json' -o -name 'README.md' \\) -exec cp {} ./dist \\; ",
+    "mv-pkg-json": "cd ./dist && mv pub.package.json package.json && node ../scripts/update-dist-package-json.js"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.9",
