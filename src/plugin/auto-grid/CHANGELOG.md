@@ -1,5 +1,11 @@
 # @trandx/tailwind-auto-grid
 
+## 1.0.3
+
+### Patch Changes
+
+- update error classname during the build
+
 ## 1.0.2
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@trandx/tailwind-auto-grid",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This utility function checks if a given value is a plain object. It returns `true` if the value is an object and `false` otherwise.",
   "keywords": [
     "tailwind",

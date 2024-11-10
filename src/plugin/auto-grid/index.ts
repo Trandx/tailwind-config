@@ -9,11 +9,12 @@ const AutoGridPlugin = plugin(function ({ matchUtilities, addUtilities, theme }:
 
   // Generate utilities for predefined sizes
   Object.keys(sizes).forEach((size) => {
-    AutoGridUtilities[`.grid-auto-fit-${size}`] = {
+    const classSize = size.replace('.', '-');
+    AutoGridUtilities[`.grid-auto-fit-${classSize}`] = {
       'grid-template-columns': `repeat(auto-fit, minmax(${sizes[size]}, 1fr))`,
     };
 
-    AutoGridUtilities[`.grid-auto-fill-${size}`] = {
+    AutoGridUtilities[`.grid-auto-fill-${classSize}`] = {
       'grid-template-columns': `repeat(auto-fill, minmax(${sizes[size]}, 1fr))`,
     };
   });
