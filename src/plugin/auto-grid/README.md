@@ -2,7 +2,7 @@
 
 This Tailwind CSS plugin provides utilities to create responsive grid layouts using `auto-fit` with custom sizing from the theme's spacing scale. It also allows for arbitrary values to be used for the `minmax` function.
 
-[![NPM](https://nodei.co/npm/@trandx/tailwind-config.png?downloads=true)](https://nodei.co/npm/@trandx/tailwind-config/)
+[![NPM](https://nodei.co/npm/@trandx/tailwind-auto-grid.png?downloads=true)](https://nodei.co/npm/@trandx/tailwind-auto-grid)
 
 
 ## Table of Contents

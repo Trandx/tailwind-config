@@ -1,7 +1,6 @@
-import plugin from 'tailwindcss/plugin';
-import { PluginAPI } from 'tailwindcss/types/config';
+import plugin, {PluginAPI} from 'tailwindcss/plugin';
 
-const AutoGridPlugin = plugin(function ({ matchUtilities, addUtilities, theme }: PluginAPI) {
+const AutoGridPlugin: any = plugin(function ({ matchUtilities, addUtilities, theme }: PluginAPI) {
   const AutoGridUtilities: Record<string, any> = {};
 
   // Define custom sizes based on theme spacing
@@ -9,11 +8,12 @@ const AutoGridPlugin = plugin(function ({ matchUtilities, addUtilities, theme }:
 
   // Generate utilities for predefined sizes
   Object.keys(sizes).forEach((size) => {
-    AutoGridUtilities[`.grid-auto-fit-${size}`] = {
+    const classSize = size.replace('.', '-');
+    AutoGridUtilities[`.grid-auto-fit-${classSize}`] = {
       'grid-template-columns': `repeat(auto-fit, minmax(${sizes[size]}, 1fr))`,
     };
 
-    AutoGridUtilities[`.grid-auto-fill-${size}`] = {
+    AutoGridUtilities[`.grid-auto-fill-${classSize}`] = {
       'grid-template-columns': `repeat(auto-fill, minmax(${sizes[size]}, 1fr))`,
     };
   });
@@ -24,7 +24,7 @@ const AutoGridPlugin = plugin(function ({ matchUtilities, addUtilities, theme }:
   // Add utility for arbitrary sizes using matchUtilities
   matchUtilities(
     {
-      'grid-auto-fit': (value) => ({
+      'grid-auto-fit': (value: string) => ({
         gridTemplateColumns: `repeat(auto-fit, minmax(${value}, 1fr))`,
       }),
     },
@@ -35,7 +35,7 @@ const AutoGridPlugin = plugin(function ({ matchUtilities, addUtilities, theme }:
 
   matchUtilities(
     {
-      'grid-auto-fill': (value) => ({
+      'grid-auto-fill': (value: string) => ({
         gridTemplateColumns: `repeat(auto-fill, minmax(${value}, 1fr))`,
       }),
     },

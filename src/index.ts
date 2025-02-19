@@ -1,2 +1,1 @@
-
-export * from "./tailwind.config"
+import "./index.css";
