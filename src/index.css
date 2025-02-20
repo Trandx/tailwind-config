@@ -10,6 +10,13 @@
   --breakpoint-3xl: 1920px;
   --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
   --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+
+  --grid-size: 8rem;
+  --grid-size-xs: 6rem;
+  --grid-size-sm: 10rem;
+  --grid-size-md: 14rem;
+  --grid-size-lg: 18rem;
+  --grid-size-xl: 22rem;
   
     /* ... */
 }
@@ -34,15 +41,19 @@
   }
 }
 
-@theme {
-  --grid-size: 8rem;
-  --grid-size-xs: 6rem;
-  --grid-size-sm: 10rem;
-  --grid-size-md: 14rem;
-  --grid-size-lg: 18rem;
-  --grid-size-xl: 22rem;
-}
+@layer base {
+  .custom-bg{
+    background: hsla(178, 100%, 36%, 1);
 
+    background: linear-gradient(315deg, hsla(178, 100%, 36%, 1) 0%, hsla(223, 42%, 15%, 1) 60%);
+
+    background: -moz-linear-gradient(315deg, hsla(178, 100%, 36%, 1) 0%, hsla(223, 42%, 15%, 1) 60%);
+
+    background: -webkit-linear-gradient(315deg, hsla(178, 100%, 36%, 1) 0%, hsla(223, 42%, 15%, 1) 60%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00B8B3", endColorstr="#161F36", GradientType=1 );
+  }
+}
 
 @utility grid-auto-fill-* {  
   grid-template-columns: repeat(auto-fill, minmax(--value( --grid-size-*, [*]), 1fr));
