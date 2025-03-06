@@ -19,12 +19,12 @@ import { fileURLToPath } from "url";
 //   __APP_FAKER_API_RESSOURCE__: env.VITE_FAKER_API_RESSOURCE,
 // });
 
-export default defineConfig(({ command, mode }) => {
+export default defineConfig(() => {
   //console.log(mode, command, +env.VITE_APP_PORT);
   const basePath = fileURLToPath(new URL("./src", import.meta.url));
   const config: UserConfig = {
     plugins: [
-      tailwindcss()
+      //tailwindcss()
     ],
     resolve: {
       alias: {

@@ -1,8 +1,16 @@
 {
     "private": false,
     "type": "module",
+    "files": [
+        "lib",
+        "types"
+    ],
     "exports": {
-        ".": "./lib/style.css"
+        ".": {
+        "import": "./lib/index.js",
+        "types": "./types/index.d.ts"
+        },
+        "./css": "./lib/style.css"
     },
     "publishConfig": {
         "access": "public",

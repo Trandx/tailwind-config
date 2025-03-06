@@ -2,7 +2,9 @@
 @import "./css/tailwind/animation";
 @import "./css/tailwind/color";
 @import "./css/tailwind/utiles";
-/* @config "./tailwind.config.js"; */
+
+@plugin 'tailwind-scrollbar';
+
 @theme {
   
   --background-stripe-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);

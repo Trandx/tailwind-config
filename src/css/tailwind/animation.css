@@ -7,7 +7,7 @@
     --animate-bounce: bounce 1s infinite;
 
     --animate-fade-in: fade-in 2s ease-in;
-    --animate-fade-out: fade-out 2s ease-in;
+    --animate-fade-out: fade-out 2s ease-out forwards;
     --animate-slide-left: slide-left 2s ease-in;
     --animate-slide-right: slide-right 2s ease-in;
     --animate-slide-up: slide-up 2s ease-in;
@@ -18,26 +18,26 @@
     --animate-slide-in-up: slide-in-up 2s ease-in;
     --animate-slide-in-down: slide-in-down 2s ease-in;
 
-    --animate-slide-out-left: slide-out-left 2s ease-in;
-    --animate-slide-out-right: slide-out-right 2s ease-in;
-    --animate-slide-out-up: slide-out-up 2s ease-in;
-    --animate-slide-out-down: slide-out-down 2s ease-in;
+    --animate-slide-out-left: slide-out-left 2s ease-out forwards;
+    --animate-slide-out-right: slide-out-right 2s ease-out forwards;
+    --animate-slide-out-up: slide-out-up 2s ease-out forwards;
+    --animate-slide-out-down: slide-out-down 2s ease-out forwards;
 
     --animate-fade-in-left: fade-in-left 2s ease-in;
     --animate-fade-in-right: fade-in-right 2s ease-in;
     --animate-fade-in-up: fade-in-up 2s ease-in;
     --animate-fade-in-down: fade-in-down 2s ease-in;
 
-    --animate-fade-out-left: fade-out-left 2s ease-in;
-    --animate-fade-out-right: fade-out-right 2s ease-in;
-    --animate-fade-out-up: fade-out-up 2s ease-in;
-    --animate-fade-out-down: fade-out-down 2s ease-in;
+    --animate-fade-out-left: fade-out-left 2s ease-out forwards;
+    --animate-fade-out-right: fade-out-right 2s ease-out forwards;
+    --animate-fade-out-up: fade-out-up 2s ease-out forwards;
+    --animate-fade-out-down: fade-out-down 2s ease-out forwards;
 
     --animate-spinner-grow: spinner-grow 2s ease-in;
 
     --animate-zoom-in: zoom-in 2s ease-in;
 
-    --animate-zoom-out: zoom-out 2s ease-in;
+    --animate-zoom-out: zoom-out 2s ease-out forwards;
 
     --animate-tada: tada 2s ease-in;
 
