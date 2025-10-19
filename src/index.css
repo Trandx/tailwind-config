@@ -19,6 +19,14 @@
   --grid-size-md: 14rem;
   --grid-size-lg: 18rem;
   --grid-size-xl: 22rem;
+
+   --scrollbar-size-xs: 6px;
+  --scrollbar-size-sm: 8px;
+  --scrollbar-size: 10px;
+  --scrollbar-size-md: 12px;
+  --scrollbar-size-lg: 14px;
+  --scrollbar-size-xl: 16px;
+  --scrollbar-size-2xl: 20px;
   
     /* ... */
 }
@@ -55,6 +63,14 @@
 
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00B8B3", endColorstr="#161F36", GradientType=1 );
   }
+}
+
+@utility scrollbar-w-* {
+  scrollbar-width: --value(--scrollbar-size-*, [*]);
+}
+
+@utility scrollbar-w {
+  scrollbar-width: var(--scrollbar-size);
 }
 
 @utility grid-auto-fill-* {  

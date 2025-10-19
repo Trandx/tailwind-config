@@ -20,15 +20,15 @@
     "mv-pkg-json": "cd ./dist && mv pub.package.json package.json && node ../scripts/update-dist-package-json.js"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.29.6",
+    "@changesets/cli": "^2.29.7",
     "@tailwindcss/forms": "^0.5.10",
-    "@tailwindcss/vite": "^4.1.12",
-    "@types/node": "^20.19.11",
+    "@tailwindcss/vite": "^4.1.14",
+    "@types/node": "^20.19.22",
     "autoprefixer": "^10.4.21",
     "tailwind-scrollbar": "^4.0.2",
-    "tailwindcss": "^4.1.12",
-    "typescript": "^5.9.2",
-    "vite": "^5.4.19"
+    "tailwindcss": "^4.1.14",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.20"
   },
   "peerDependencies": {
     "tailwindcss": "^4.0.9"
